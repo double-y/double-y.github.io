@@ -1,4 +1,10 @@
-#parent_container {
-  width: 60%;
-  margin: 0 auto;
+body {
+  color: #444;
+  background-color: #fffdd0;
+}
+header {
+  text-align: center;
+}
+.content-wrap {
+  margin: 12px;
 }
