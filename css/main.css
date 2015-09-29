@@ -10,6 +10,22 @@ header {
 }
 h1#blog_title {
   margin: 24px 0 6px 0;
+  font-family: 'Fredericka the Great', cursive;
+}
+.content {
+  font-family: 'Average', serif;
+}
+.content h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-bottom: 12px;
+}
+.content p {
+  font-size: 18px;
+}
+strong.sub_title {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
 }
 p {
   margin: 12px 0 12px 0;
