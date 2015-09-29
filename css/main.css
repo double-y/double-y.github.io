@@ -8,3 +8,9 @@ header {
 .content-wrap {
   margin: 12px;
 }
+h1#blog_title {
+  margin: 24px 0 6px 0;
+}
+p {
+  margin: 12px 0 12px 0;
+}
