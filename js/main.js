@@ -21,7 +21,8 @@ $(function () {
     new Date(2015, 9, 7),
     new Date(2015, 9, 8),
     new Date(2015, 9, 9),
-    new Date(2015, 9, 10)
+    new Date(2015, 9, 10),
+    new Date(2015, 9, 11)
   ];
   $('#article_date_picker').datetimepicker({
     inline: true,
