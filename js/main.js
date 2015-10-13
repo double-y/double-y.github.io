@@ -22,22 +22,30 @@ $(function () {
     new Date(2015, 9, 8),
     new Date(2015, 9, 9),
     new Date(2015, 9, 10),
-    new Date(2015, 9, 11)
+    new Date(2015, 9, 11),
+    new Date(2015, 9, 12)
   ];
+  var href = location.href.split("/");
+  var fileName = href[href.length-1];
+  var dateInfo = fileName.split(/-|\./).map(function(string){
+    return Number(string);
+  });
+  var selectedDate = new Date(dateInfo[2], dateInfo[1]-1, dateInfo[0]);
   $('#article_date_picker').datetimepicker({
     inline: true,
     sideBySide: true,
     showTodayButton: true,
     toolbarPlacement: 'top',
     useCurrent: false,
+    defaultDate: selectedDate,
     enabledDates: dates
+  }).on("dp.change", function(e){
+    var date = e.date._d;
+    var day = date.getDate();
+    var dayString = day < 10 ? "0"+day : day;
+    var month = date.getMonth();
+    var monthString = month < 9 ? "0"+(month+1) : month+1;
+    var yearString = date.getFullYear();
+    location.href = dayString+"-"+monthString+"-"+yearString+".html";
   });
-  $('#article_date_picker').on("click", "td", function(e){
-    console.log("clicked");
-  });
-  $('td.day').on("click", function(e){
-    var dataday = this.getAttribute("data-day").split("/");
-
-    location.href = dataday[1]+"-"+dataday[0]+"-"+dataday[2]+".html";
-  })
 })
