@@ -35,7 +35,8 @@ $(function () {
     new Date(2015, 9, 21),
     new Date(2015, 9, 22),
     new Date(2015, 9, 26),
-    new Date(2015, 9, 27)
+    new Date(2015, 9, 27),
+    new Date(2015, 9, 28)
   ];
   var href = location.href.split("/");
   var fileName = href[href.length-1];
