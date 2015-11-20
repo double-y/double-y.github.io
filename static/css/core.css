@@ -1,0 +1,17 @@
+.content {
+  font-family: 'Average', serif;
+}
+.content h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-bottom: smargin;
+  font-size: 24px;
+  font-weight: 700;
+}
+.content h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.content p {
+  font-size: 18px;
+}
